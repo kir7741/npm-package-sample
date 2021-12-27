@@ -1,19 +1,33 @@
 {
   "name": "@x-plan/npm-package-sample",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/main.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "build:stage": "webpack --env mode=stage",
-    "build:prod": "webpack --env mode=production"
+    "build:prod": "webpack --env mode=production",
+    "publish": "npm publish --access public"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Joseph",
+    "url": "https://github.com/kir7741"
+  },
+  "contributors": [
+    {
+      "name" : "Andy Chien",
+      "url" : "https://github.com/andy511032002"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kir7741/npm-package-sample"
+  },
+  "files": ["dist"],
   "license": "ISC",
   "dependencies": {
-    "date-fns": "^2.26.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
