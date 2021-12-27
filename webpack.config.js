@@ -17,10 +17,20 @@ module.exports = (env, argv) => {
     ? {
       path: path.resolve(__dirname, './dist'),
       filename: 'js/[name].min.js',
+      // 設定 library 的匯出方式 
+      // export (ES module) 使用 module
+      // module.exports (CommonJS) 使用 umd
+      library: {
+        type: 'module',
       }
+    }
     : {
       path: path.resolve(__dirname, './dist'),
       filename: 'js/[name].dev.js',
+    },
+    // 需要開啟 outputModule 才可以匯出模組
+    experiments: {
+      outputModule: true
     },
     module: {
       rules: [

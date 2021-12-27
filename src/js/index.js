@@ -18,4 +18,4 @@ const benchmarker = (testFunction, times = 1000000) => {
 };
 
 // 匯出函式
-module.exports = benchmarker;
+export default benchmarker;

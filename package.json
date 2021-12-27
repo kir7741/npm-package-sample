@@ -1,6 +1,6 @@
 {
   "name": "@x-plan/npm-package-sample",
-  "version": "0.0.2",
+  "version": "0.0.9",
   "description": "",
   "main": "dist/js/main.min.js",
   "scripts": {
